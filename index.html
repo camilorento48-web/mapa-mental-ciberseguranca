@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Mental - Projeto de Cibersegurança</title>
+    <style>
+        :root {
+            --bg-color: #fff0f5;
+            --card-bg: #ffffff;
+            --primary-pink: #ffb6c1;
+            --dark-pink: #db7093;
+            --accent-purple: #dda0dd;
+            --text-color: #4a4a4a;
+            --border-radius: 20px;
+            --shadow: 0 10px 25px rgba(219, 112, 147, 0.15);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: var(--dark-pink);
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #7a7a7a;
+            background: #ffe4e1;
+            padding: 6px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .central-node {
+            background: linear-gradient(135deg, #ffb6c1, #dda0dd);
+            color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .central-node h2 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .central-node p {
+            font-size: 0.9rem;
+            opacity: 0.95;
+        }
+
+        .grid-branches {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+        }
+
+        .branch-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--dark-pink);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .branch-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(219, 112, 147, 0.25);
+        }
+
+        .branch-card h3 {
+            color: var(--dark-pink);
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .branch-card ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .branch-card li {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .branch-card li::before {
+            content: "🌸";
+            position: absolute;
+            left: 0;
+            font-size: 0.75rem;
+            top: 1px;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .central-node h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>☁️ Mapa Mental do Projeto ☁️</h1>
+        <div class="subtitle">Oficina de Resultados dos Indicadores de Desempenho</div>
+    </header>
+
+    <div class="container">
+        <!-- Nó Central -->
+        <div class="central-node">
+            <h2>Empresa de Cibersegurança & Análise de Lacunas</h2>
+            <p>Grupo: Gabriel Galdino, Gabriel Diniz, Emanuelle Martinucho, Iago Laiola e Bruna Alves | 3º Ano Administração</p>
+        </div>
+
+        <!-- Ramos do Mapa Mental -->
+        <div class="grid-branches">
+            
+            <!-- 1. Introdução e Contexto -->
+            <div class="branch-card" style="border-top-color: #ffb6c1;">
+                <h3>✨ 1. Introdução e Contexto</h3>
+                <ul>
+                    <li><strong>Proposta:</strong> Empresa de cibersegurança focada em testes de vulnerabilidade e lacunas corporativas.</li>
+                    <li><strong>Público-alvo:</strong> Empresas de médio e grande porte que buscam blindagem digital.</li>
+                    <li><strong>Diferencial:</strong> Redirecionamento de relatórios de melhoria para órgãos de segurança pública e contratação de agentes especializados.</li>
+                </ul>
+            </div>
+
+            <!-- 2. Metodologia e Indicadores -->
+            <div class="branch-card" style="border-top-color: #dda0dd;">
+                <h3>📊 2. Metodologia e Indicadores</h3>
+                
